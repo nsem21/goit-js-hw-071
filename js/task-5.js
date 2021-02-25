@@ -9,4 +9,4 @@ const greeting = (userEvent) => {
     }
 }
 
-userInput.addEventListener('input', greeting);
+userInput.addEventListener('change', greeting);
