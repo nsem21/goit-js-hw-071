@@ -1,4 +1,4 @@
-const userInput = document.querySelector('input');
+const userInput = document.querySelector('#name-input');
 const myOutput = document.querySelector('#name-output');
 
 const greeting = (userEvent) => {
