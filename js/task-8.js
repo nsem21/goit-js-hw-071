@@ -28,8 +28,8 @@ const createBoxes = (amount) => {
 const destroyBoxes = () => {
    while (boxes.firstChild) {
        boxes.removeChild(boxes.lastChild);
-   }
-
+    }
+   
 }
 
 renderBtn.addEventListener('click', () => createBoxes(Number(userInput.value)));
