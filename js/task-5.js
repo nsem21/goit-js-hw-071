@@ -1,12 +1,8 @@
 const userInput = document.querySelector('#name-input');
-const myOutput = document.querySelector('#name-output');
+const greetOutput = document.querySelector('#name-output');
 
-const greeting = (userEvent) => {
-    if (userEvent.target.value) {
-    myOutput.textContent = userEvent.target.value;
-    } else {
-        myOutput.textContent = 'незнакомец';
-    }
+const greeting = (inputEvent) => {
+    greetOutput.textContent = inputEvent.target.value ? inputEvent.target.value : 'незнакомец';    
 }
 
 userInput.addEventListener('input', greeting);

@@ -1,8 +1,7 @@
 const userInput = document.querySelector('#validation-input');
 
 const toValidate = (newEvent) => {
-    const measurement = newEvent.target.value.length;
-    const listOfClasses = userInput.classList;
+    const measurement = newEvent.currentTarget.value.length;
     if (measurement === 6) {
         userInput.classList.remove('valid')
         userInput.classList.remove('invalid')

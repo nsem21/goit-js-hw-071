@@ -8,9 +8,9 @@ const ingredients = [
 ];
 const newList = document.querySelector('#ingredients');
 const itemsList = [];
-ingredients.forEach ((value, index) => {
+ingredients.forEach (ingredient => {
     const item = document.createElement('li');
-    item.textContent = ingredients[index];
+    item.textContent = ingredient;
     itemsList.push(item);
 });
 newList.append (...itemsList);
