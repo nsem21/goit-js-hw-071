@@ -32,6 +32,6 @@ const destroyBoxes = () => {
    
 }
 
-renderBtn.addEventListener('click', () => createBoxes(Number(userInput.value)));
+renderBtn.addEventListener('click', () => createBoxes(userInput.value));
 destroyBtn.addEventListener('click', () => destroyBoxes());
 
